@@ -45,7 +45,7 @@ class TripsController < ApplicationController
 
     @trip.start_date = params.fetch("start_date")
     @trip.end_date = params.fetch("end_date")
-    @trip.user_id = params.fetch("user_id")
+    
     @trip.location = params.fetch("location")
 
     if @trip.valid?
